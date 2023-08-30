@@ -46,7 +46,7 @@ right:6rem;
 
 .left_s>:nth-child(2){
 font-weight: bold;
-font-size: 2rem;
+font-size: 1.5rem;
 }
 .left_s>:nth-child(3){
 font-size: 0.6rem;
@@ -63,4 +63,15 @@ border-radius: 15px;
     width: 40%;
     height: 100%;
     bottom: -20%;
+}
+
+@media screen and (max-width:856px) {
+    .slider_cont .swiper{
+        width: 75%;
+        height: 10rem;
+    }
+        .slider_cont .swiper-button-prev,
+        .slider_cont .swiper-button-next {
+            display: none;
+        }
 }

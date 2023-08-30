@@ -12,6 +12,10 @@ const Slider = () => {
     return (
         <div className="slider_cont">
             <Swiper
+                breakpoints={{
+                    640: { slidesPerView: 3 },
+                    0:{slidesPerView:1}
+                }}
                 modules={[Pagination, Navigation]}
                 className="xidon_swiper"
                 loopFillGroupWithBlank={true}
@@ -19,7 +23,9 @@ const Slider = () => {
                 slidesPerView={3}
                 spaceBetween={40}
                 slidePerGroup={1}
-                loop={true}>
+                loop={true}
+            >
+        
                 {SliderProducts.map((slide, i) => {
                     return (
                         <SwiperSlide>
